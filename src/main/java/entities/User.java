@@ -17,6 +17,7 @@ public class User {
         this.login = login;
     }
 
+
     public String getPassword() {
         return password;
     }
@@ -39,6 +40,12 @@ public class User {
 
     public void setWorkingHours(Byte workingHours) {
         this.workingHours = workingHours;
+    }
+
+    public User(String login, String password, Double salaryRatePerHour) {
+        this.login = login;
+        this.password = password;
+        this.salaryRatePerHour = salaryRatePerHour;
     }
 
     public User(String login, String password) {
