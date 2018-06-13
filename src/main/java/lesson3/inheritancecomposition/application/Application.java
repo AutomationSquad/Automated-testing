@@ -9,10 +9,16 @@ public class Application {
         
         Person person = new Person("John", "john@domain.com", 35);
 
-        Waitress waitress = new Waitress("Mary", "mary@domain.com", 22);
-        System.out.println(waitress.serveStarter("mixed salad"));
-        System.out.println(waitress.serveMainCourse("steak"));
-        System.out.println(waitress.serveDessert("cup of cofee"));
+        Person waitress = new Actress("Mary", "mary@domain.com", 22);
+        System.out.println(waitress.getAge());
+        if (waitress instanceof Waitress) {
+            System.out.println(((Waitress) waitress).serveStarter("mixed salad"));
+        } else {
+            System.out.println("I'm not waitress!");
+        }
+        //        System.out.println(waitress.serveStarter("mixed salad"));
+//        System.out.println(waitress.serveMainCourse("steak"));
+//        System.out.println(waitress.serveDessert("cup of cofee"));
 
         Actress actress = new Actress("Susan", "susan@domain.com", 30);
         System.out.println(actress.readScript("Psycho"));

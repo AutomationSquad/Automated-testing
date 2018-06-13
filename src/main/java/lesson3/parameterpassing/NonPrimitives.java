@@ -1,9 +1,9 @@
 package lesson3.parameterpassing;
 
 public class NonPrimitives {
+    static FooClass a = new FooClass(1);
+    static FooClass b = new FooClass(1);
     public static void main(String[] args) {
-        FooClass a = new FooClass(1);
-        FooClass b = new FooClass(1);
  
         System.out.printf("Before Modification: a = %d and b = %d ", a.num, b.num);
         modify(a, b);
@@ -15,6 +15,7 @@ public class NonPrimitives {
        
         b1 = new FooClass(1);
         b1.num++;
+        b = b1;
     }
 }
 
