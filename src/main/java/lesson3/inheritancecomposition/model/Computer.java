@@ -25,8 +25,8 @@ public class Computer {
         return memory;
     }
     
-    public Optional<SoundCard> getSoundCard() {
-        return Optional.ofNullable(soundCard);
+    public SoundCard getSoundCard() {
+        return soundCard;
     }
     
     @Override
