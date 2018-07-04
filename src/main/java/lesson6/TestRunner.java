@@ -1,16 +1,12 @@
-package lesson5;
+package lesson6;
 
-import lesson5.listeners.TestListener;
-import org.junit.platform.engine.discovery.MethodSelector;
+import lesson6.listeners.TestListener;
+import lesson6.tests.JUnit5Test;
 import org.junit.platform.launcher.Launcher;
 import org.junit.platform.launcher.LauncherDiscoveryRequest;
-import org.junit.platform.launcher.TestExecutionListener;
 import org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder;
 import org.junit.platform.launcher.core.LauncherFactory;
 
-
-
-import java.util.List;
 
 import static org.junit.platform.engine.discovery.ClassNameFilter.includeClassNamePatterns;
 import static org.junit.platform.engine.discovery.DiscoverySelectors.selectClass;
@@ -21,7 +17,8 @@ public class TestRunner {
     public static void main(String[] args) {
         LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request()
                 .selectors(
-                        selectPackage("lesson5")
+                        selectPackage("lesson6"),
+                        selectClass(JUnit5Test.class)
                 )
                 .filters(includeClassNamePatterns(".*Test"))
                 .build();
@@ -32,4 +29,5 @@ public class TestRunner {
 
         launcher.execute(request);
     }
+
 }

@@ -1,4 +1,4 @@
-package lesson5.listeners;
+package lesson6.listeners;
 
 import org.junit.platform.engine.TestExecutionResult;
 import org.junit.platform.launcher.TestExecutionListener;

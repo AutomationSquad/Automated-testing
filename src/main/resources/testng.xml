@@ -4,7 +4,7 @@
 
     <test name="test name ">
         <classes>
-            <class name="lesson5.tests.JUnit5Test"/>
+            <class name="lesson6.tests.JUnit5Test"/>
         </classes>
     </test>
 </suite>
