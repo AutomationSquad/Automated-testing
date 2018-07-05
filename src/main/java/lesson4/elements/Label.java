@@ -1,6 +1,6 @@
 package lesson4.elements;
 
-import intefaces.IVisible;
+import lesson4.intefaces.IVisible;
 
 public class Label extends Component implements IVisible {
 

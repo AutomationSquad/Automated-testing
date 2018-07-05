@@ -1,7 +1,7 @@
 package lesson4.elements;
 
-import awsomeLib.AwesomeButton;
-import intefaces.IClickable;
+import lesson4.awsomeLib.AwesomeButton;
+import lesson4.intefaces.IClickable;
 
 public class TestApplication {
 

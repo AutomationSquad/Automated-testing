@@ -1,6 +1,6 @@
 package lesson4.elements;
 
-import intefaces.IVisibleClickable;
+import lesson4.intefaces.IVisibleClickable;
 
 public class TextField extends TextComponent implements IVisibleClickable {
     private int length;

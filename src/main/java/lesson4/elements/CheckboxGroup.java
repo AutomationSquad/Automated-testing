@@ -1,6 +1,6 @@
 package lesson4.elements;
 
-import intefaces.IClickable;
+import lesson4.intefaces.IClickable;
 
 public class CheckboxGroup implements IClickable {
     protected String name;

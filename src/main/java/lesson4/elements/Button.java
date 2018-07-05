@@ -1,7 +1,7 @@
 package lesson4.elements;
 
-import intefaces.IClickable;
-import intefaces.IVisible;
+import lesson4.intefaces.IClickable;
+import lesson4.intefaces.IVisible;
 
 import java.util.Random;
 

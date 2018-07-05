@@ -1,6 +1,6 @@
 package lesson4.awsomeLib;
 
-import intefaces.IClickable;
+import lesson4.intefaces.IClickable;
 
 public class AwesomeButton implements IClickable {
     @Override
