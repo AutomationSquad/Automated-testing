@@ -31,13 +31,7 @@ dependencies {
     compile group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.2.0'
     compile group: 'org.junit.platform', name: 'junit-platform-launcher', version: '1.2.0'
 
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.8.1'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.13.0'
 }
 
 
-junitPlatform {
-
-    reportsDir = file("$buildDir/test-results")
-
-    enableStandardTestTask false
-}
