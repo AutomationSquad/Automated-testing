@@ -3,6 +3,8 @@ package lesson1;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static driver.get.DriverData.getOs;
+
 public class SimpleTest {
 
     @Test(expected = ArithmeticException.class)

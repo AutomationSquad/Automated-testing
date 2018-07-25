@@ -28,10 +28,10 @@ dependencies {
     compile "org.junit.jupiter:junit-jupiter-params:5.2.0"
     compile 'org.junit.jupiter:junit-jupiter-api:5.2.0'
     compile 'org.junit.jupiter:junit-jupiter-engine:5.2.0'
+    compile 'io.github.bonigarcia:webdrivermanager:2.2.0'
     compile group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.2.0'
     compile group: 'org.junit.platform', name: 'junit-platform-launcher', version: '1.2.0'
 
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.13.0'
 }
-
 

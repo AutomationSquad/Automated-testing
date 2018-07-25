@@ -1,5 +1,7 @@
 package lesson7;
 
+import driver.get.User;
+import js.JSActions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +23,12 @@ public class WebDriverTest extends BaseTest {
         String searchString = "Ukraine";
         searchInput.sendKeys(searchString);
 
-        driver.findElement(By.cssSelector("[type='submit']")).click();
+        WebElement element = driver.findElement(By.cssSelector("[type='submit']"));
+        jsActions.scrollToElement(element);
+        jsActions.higlightRed(element);
+        jsActions.setText("testsggsgs",searchInput);
+        element.click();
+        User customer = User.CUSTOMER;
 
         assertEquals(searchString, driver.findElement(By.id("firstHeading")).getText(),
                 "Wrong title");
